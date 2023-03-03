@@ -44,11 +44,11 @@ const Navbar = () => {
                  <nav className='nav-menu' >
                   <button onClick={handleClick} className="menu-close" ></button>
                   <ul className="menu ">
-                    <li><a href="_blank">Home</a></li>
-                    <li><a href="_blank">New</a></li>
-                    <li><a href="_blank">Popular</a></li>
-                    <li><a href="_blank">Trending </a></li>
-                    <li><a href="_blank">Categories </a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending </a></li>
+                    <li><a href="#">Categories </a></li>
                   </ul>
                 </nav> 
 
