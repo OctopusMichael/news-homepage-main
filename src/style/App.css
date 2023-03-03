@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+  /*  ## Colors
+
+  ### Primary */
+
+  --softOrange: hsl(35, 77%, 62%);
+  --softRed: hsl(5, 85%, 63%);
+
+  /*   ### Neutral */
+
+  --OffWhite: hsl(36, 100%, 99%);
+  --grayishBlue: hsl(233, 8%, 79%);
+  --darkGrayishBlue: hsl(236, 13%, 42%);
+  --veryDarkBlue: hsl(240, 100%, 5%);
+}
+/* - Font size (paragraph): 15px */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+/* ---------------------------   section-Navbar -------------------------------- */
+.section-container-navbar {
+  background-color: white;
+  margin-top: -10px;
+}
+.nav-menu {
+  color: var(--veryDarkBlue);
+  height: 100vh;
+  width: 70vw;
+  position: fixed;
+  background-color: var(--OffWhite);
+  left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.transparent {
+  background-color: rgba(0, 0, 0, 0.808);
+  height: 150vh;
+  position: fixed;
+  margin-top: -10px;
+}
+
+.menu-close {
+  background-image: url(../images/icon-menu-close.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  margin-top: 20px;
+  align-self: end;
+  transition: all 1000s ease;
+}
+
+.menu-open {
+  background-image: url(../images/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  display: visible;
+  transition: all 1000s ease;
+}
+.logo-1 {
+  margin: 15px 0px;
+}
+
+.logo-2 {
+  margin-top: 18px;
+  margin-left: 8px;
+  margin-bottom: -90px;
+}
+ul {
+  margin-top: 60px;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 30px;
+  margin-left: -10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--veryDarkBlue);
+  font-weight: 700;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: var(--softRed);
+  font-weight: 700;
+}
+/* ---------------------------   section-container  -------------------------------- */
+
+.section-container-one {
+  margin-top: 80px;
+}
+
+/* ---------------------------   section-Left   -------------------------------- */
+
+.hero-img {
+  background-image: url(../images/image-web-3-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.section-left h1 {
+  font-weight: 800;
+  color: var(--veryDarkBlue);
+  font-size: 40px;
+  margin-top: 20px;
+}
+.section-left p {
+  color: var(--darkGrayishBlue);
+  font-weight: 400;
+}
+.btn {
+  border-radius: 0px;
+  background-color: var(--softRed);
+  color: white;
+  width: 50%;
+}
+.btn:hover {
+  background-color: var(--veryDarkBlue);
+  color: white;
+}
+
+/* ---------------------------   section-right   -------------------------------- */
+
+.section-right {
+  width: 90%;
+  background-color: var(--veryDarkBlue);
+  margin: 50px auto;
+  padding: 20px 20px;
+}
+.section-right h1 {
+  color: var(--softOrange);
+  font-weight: 700;
+}
+.section-right h5 {
+  margin-top: 30px;
+}
+.section-right a {
+  color: white;
+  text-decoration: none;
+}
+.section-right a:hover {
+  color: var(--softOrange);
+  text-decoration: none;
+}
+.section-right p {
+  color: rgba(240, 248, 255, 0.308);
+}
+hr {
+  color: white;
+}
+
+/* ---------------------------   articles-img      -------------------------------- */
+
+.section-articles {
+  display: flex;
+  margin-top: 30px;
+  width: 90%;
+  margin: auto;
+}
+.section-article-right {
+  padding: 0px 10px 0px 0px;
+  margin-left: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-article-right h2 {
+  color: var(--grayishBlue);
+  font-weight: 800;
+}
+.section-article-right a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+.section-article-right a:hover {
+  color: var(--softRed);
+}
+.section-article-righth p {
+  background-color: var(--grayishBlue);
+}
+
+.retro {
+  background-image: url(../images/image-retro-pcs.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 120px;
+}
+.laptop {
+  background-image: url(../images/image-top-laptops.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 120px;
+}
+.gaming {
+  background-image: url(../images/image-gaming-growth.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 120px;
+}
+/* ---------------------------   Footer   -------------------------------- */
+.attribution {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  background-color:var(--grayishBlue) ;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*================================= Small Devices, Tablets================================ */
+@media only screen and (min-width: 768px) {
+  /* ---------------------------   Section container   -------------------------------- */
+
+  .section-container-one {
+    margin-top: 80px;
+    width: 80%;
+  }
+
+  /* ---------------------------   section-Navbar -------------------------------- */
+  .section-container-navbar {
+    background-color: white;
+    width: 80%;
+  }
+
+  .menu-open {
+    display: none;
+  }
+
+  /* ---------------------------   section-Left   -------------------------------- */
+
+  .hero-img {
+    background-image: url(../images/image-web-3-desktop.jpg);
+    margin-bottom: -20px;
+  }
+  .section-left h1 {
+    font-weight: 800;
+    color: var(--veryDarkBlue);
+    font-size: 55px;
+    margin-top: 40px;
+  }
+  .section-left p {
+    color: var(--darkGrayishBlue);
+    font-weight: 400;
+    margin-top: 40px;
+  }
+  .btn {
+    margin-top: 80px;
+  }
+  /* ---------------------------   section-Right   -------------------------------- */
+  .section-right {
+    width: 30%;
+    background-color: var(--veryDarkBlue);
+    margin: 0px auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-right h1 {
+    color: var(--softOrange);
+    font-weight: 700;
+    margin-top: -50px;
+  }
+  .section-right h5 {
+    margin-top: 30px;
+  }
+  .section-right a {
+    color: white;
+    text-decoration: none;
+  }
+  .section-right a:hover {
+    color: var(--softOrange);
+    text-decoration: none;
+  }
+  .section-right p {
+    color: rgba(240, 248, 255, 0.308);
+  }
+
+  hr {
+    color: white;
+  }
+
+  /* ---------------------------   articles-img      -------------------------------- */
+
+  .section-articles {
+    display: flex;
+    margin-top: 60px;
+    width: 33.3%;
+   
+  }
+  .section-article-right {
+    padding: 0px 10px 0px 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .retro {
+    background-image: url(../images/image-retro-pcs.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+  }
+  .laptop {
+    background-image: url(../images/image-top-laptops.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+  }
+  .gaming {
+    background-image: url(../images/image-gaming-growth.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+  }
+
+  .section-article-right {
+    padding: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 150px;
+  }
+  .section-article-right h2 {
+    color: var(--grayishBlue);
+    font-weight: 800;
+    margin-top: -10px;
+  }
+  .section-article-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .section-article-right a:hover {
+    color: var(--softRed);
+  }
+  .section-article-right p {
+    color: var(--darkGrayishBlue);
+  }
+
+  /* ---------------------------   Footer   -------------------------------- */
+.attribution {
+  margin-top: 100px;
+  font-size: 18px;
+  text-align: center;
+ 
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 992px) {
+}
